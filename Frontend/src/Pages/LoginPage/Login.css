@@ -1,0 +1,175 @@
+/* حاوية الصفحة */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5; /* خلفية خفيفة */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* كرت تسجيل الدخول */
+  .login-card {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+  }
+  
+  .login-card h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* المجموعة المدخلة */
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-group .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #007aff;
+    font-size: 1.2rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    border: 1px solid #007aff;
+    box-shadow: 0 0 5px rgba(0, 122, 255, 0.5);
+    outline: none;
+  }
+  
+  /* أيقونات التحقق */
+  .status-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+  }
+  
+  .status-icon.valid {
+    color: #28a745; /* لون أخضر للتحقق */
+  }
+  
+  .status-icon.invalid {
+    color: #dc3545; /* لون أحمر للتحقق */
+  }
+  
+  /* زر تسجيل الدخول */
+  .login-button {
+    background: #007aff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+  }
+  
+  .login-button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .login-button:active {
+    transform: scale(1);
+  }
+  
+  /* استجابة للهاتف */
+  @media (max-width: 768px) {
+    .login-card {
+      width: 90%;
+    }
+  }
+  /* تحسن تصميم الزر */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #6e7dff, #4a54f1); /* تدرج لوني */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #4a54f1, #6e7dff); /* تغيير التدرج عند المرور */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* زيادة الظل عند المرور */
+  transform: translateY(-2px); /* رفع الزر عند المرور */
+}
+
+.login-button:active {
+  background: linear-gradient(135deg, #6e7dff, #4a54f1); /* عودة التدرج عند الضغط */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(2px); /* ضغط الزر عند النقر */
+}
+/* تحسين تصميم زر "Créer un compte" */
+.register-button {
+  padding: 12px;
+  background: linear-gradient(135deg, #ff7c7c, #ff4d4d); /* تدرج لوني */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+}
+
+.register-button:hover {
+  background: linear-gradient(135deg, #ff4d4d, #ff7c7c); /* تغيير التدرج عند المرور */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* زيادة الظل عند المرور */
+  transform: translateY(-2px); /* رفع الزر عند المرور */
+}
+
+.register-button:active {
+  background: linear-gradient(135deg, #ff7c7c, #ff4d4d); /* عودة التدرج عند الضغط */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(2px); /* ضغط الزر عند النقر */
+}
+.register-button {
+  padding: 12px;
+  background: linear-gradient(135deg, #ff7c7c, #ff4d4d); /* تدرج لوني */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+  text-decoration: none; /* إزالة الخط تحت النص */
+}
+
+.register-button:hover {
+  background: linear-gradient(135deg, #ff4d4d, #ff7c7c); /* تغيير التدرج عند المرور */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* زيادة الظل عند المرور */
+  transform: translateY(-2px); /* رفع الزر عند المرور */
+}
+
+.register-button:active {
+  background: linear-gradient(135deg, #ff7c7c, #ff4d4d); /* عودة التدرج عند الضغط */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(2px); /* ضغط الزر عند النقر */
+}
